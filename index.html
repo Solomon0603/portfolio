@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solomon David | AI & ML Developer</title>
+    <meta name="description" content="Portfolio of Solomon David, a 2nd year B.Tech CSE (AI & ML) student at Karunya Institute of Technology and Sciences.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background Effects -->
+    <div class="bg-grid"></div>
+    <div class="mouse-glow"></div>
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar hidden-reveal">
+        <div class="nav-content section-container">
+            <a href="#hero" class="nav-logo">SD.<span>dev</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="section-container min-h-screen flex-center hero-section hidden-reveal">
+            <div class="hero-content">
+                <div class="code-badge"><i class="ph ph-terminal-window"></i> hello_world.py</div>
+                <h1 class="hero-title">
+                    Hi, I'm <span class="text-glow">Solomon David</span>.
+                </h1>
+                <h2 class="hero-subtitle" style="margin-bottom: 1.5rem;">
+                    AI & Machine Learning Student <span class="text-dim">|</span> Developer
+                </h2>
+                <div class="bible-verse" style="font-style: italic; color: var(--text-secondary); margin-bottom: 2.5rem; font-size: 0.95rem; border-left: 2px solid var(--border-color); padding-left: 1rem; max-width: 600px; line-height: 1.5;">
+                    "and I have filled him with the Spirit of God, with ability and intelligence, with knowledge and all craftsmanship, to devise artistic designs, to work in gold, silver, and bronze, in cutting stones for setting, to work in every craft."<br>
+                    <span style="font-size: 0.8rem; font-weight: 600; color: var(--text-dim); margin-top: 0.5rem; display: inline-block;">— Exodus 31:3-5</span>
+                </div>
+                <p class="hero-desc">
+                    Passionate 2nd year B.Tech CSE (AIML) student focused on building intelligent systems, creating efficient algorithms, and solving real-world problems.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">
+                        View Projects <i class="ph ph-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        Contact Me <i class="ph ph-envelope-simple"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- Decorative code block -->
+            <div class="hero-code-wrapper hidden-reveal" style="transition-delay: 200ms;">
+                <div class="code-window">
+                    <div class="window-header">
+                        <span class="dot close"></span>
+                        <span class="dot min"></span>
+                        <span class="dot max"></span>
+                    </div>
+                    <pre><code class="language-python">class Developer:
+    def __init__(self):
+        self.name = "Solomon David"
+        self.role = "AI/ML Student"
+        self.skills = ["Python", "TensorFlow", "React"]
+    
+    def code(self):
+        while True:
+            self.learn()
+            self.build()
+            self.optimize()
+
+dev = Developer()
+dev.code()</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section-container hidden-reveal py-section">
+            <div class="section-header">
+                <h2 class="section-title">01. <span>About Me</span></h2>
+                <div class="line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm currently a <strong>2nd year B.Tech CSE (AI & ML)</strong> student at <em>Karunya Institute of Technology and Sciences</em>. I've always been fascinated by how data can be transformed into intelligent decision-making systems.
+                    </p>
+                    <p>
+                        My journey in tech revolves around understanding complex machine learning algorithms and translating them into tangible, scalable applications. I thrive in hackathons, love collaborating with fellow developers, and am constantly exploring the bleeding edge of AI technology.
+                    </p>
+                    <div class="interest-areas">
+                        <div class="interest-badge"><i class="ph ph-brain"></i> Artificial Intelligence</div>
+                        <div class="interest-badge"><i class="ph ph-chart-scatter"></i> Machine Learning</div>
+                        <div class="interest-badge"><i class="ph ph-code"></i> Real-world Projects</div>
+                        <div class="interest-badge"><i class="ph ph-lightning"></i> Hackathons</div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="image-placeholder group">
+                        <div class="img-inner">
+                            <i class="ph ph-user-focus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section-container hidden-reveal py-section">
+            <div class="section-header">
+                <h2 class="section-title">02. <span>Projects</span></h2>
+                <div class="line"></div>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card group">
+                    <div class="project-icons">
+                        <i class="ph ph-folder-notch-open"></i>
+                        <a href="https://github.com/Solomon0603" target="_blank" class="github-link" aria-label="GitHub Repository"><i class="ph ph-github-logo"></i></a>
+                    </div>
+                    <h3 class="project-title">AI Hackathon Judge Assistant</h3>
+                    <p class="project-desc">
+                        An intelligent AI-based system designed to help evaluate hackathon submissions by analyzing code quality, originality, and adherence to problem statements using NLP models.
+                    </p>
+                    <ul class="project-tech">
+                        <li>Python</li>
+                        <li>OpenAI API</li>
+                        <li>FastAPI</li>
+                        <li>React</li>
+                    </ul>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card group" style="transition-delay: 100ms;">
+                    <div class="project-icons">
+                        <i class="ph ph-folder-notch-open"></i>
+                        <a href="https://github.com/Solomon0603" target="_blank" class="github-link" aria-label="GitHub Repository"><i class="ph ph-github-logo"></i></a>
+                    </div>
+                    <h3 class="project-title">Neural Net Visualizer</h3>
+                    <p class="project-desc">
+                        A web application that allows users to build, train, and visualize simple feedforward neural networks in real-time, helping students understand backpropagation.
+                    </p>
+                    <ul class="project-tech">
+                        <li>JavaScript</li>
+                        <li>TensorFlow.js</li>
+                        <li>D3.js</li>
+                    </ul>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card group" style="transition-delay: 200ms;">
+                    <div class="project-icons">
+                        <i class="ph ph-folder-notch-open"></i>
+                        <a href="https://github.com/Solomon0603" target="_blank" class="github-link" aria-label="GitHub Repository"><i class="ph ph-github-logo"></i></a>
+                    </div>
+                    <h3 class="project-title">Predictive Health Analytics</h3>
+                    <p class="project-desc">
+                        Machine learning pipeline that processes anonymized patient data to predict early onset of lifestyle diseases with 89% accuracy using ensemble methods.
+                    </p>
+                    <ul class="project-tech">
+                        <li>Scikit-Learn</li>
+                        <li>Pandas</li>
+                        <li>Jupyter</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="view-more-container mt-8 text-center">
+                <a href="https://github.com/Solomon0603" target="_blank" class="btn btn-outline text-sm">
+                    View More on GitHub <i class="ph ph-arrow-square-out"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section-container hidden-reveal py-section">
+            <div class="section-header">
+                <h2 class="section-title">03. <span>Skills</span></h2>
+                <div class="line"></div>
+            </div>
+            
+            <div class="skills-layout">
+                <div class="skills-category">
+                    <h3>Core Competencies</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Python</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="90%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Machine Learning</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="80%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>AI Tools / Frameworks</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Data Analysis</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="75%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3>Development & Tools</h3>
+                    <div class="skills-grid-small">
+                        <div class="skill-card">
+                            <i class="ph ph-git-merge"></i>
+                            <span>Git & GitHub</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="ph ph-file-html"></i>
+                            <span>Web Dev Basics</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="ph ph-database"></i>
+                            <span>SQL / NoSQL</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="ph ph-terminal"></i>
+                            <span>Bash / Linux</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="ph ph-cpu"></i>
+                            <span>TensorFlow</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="ph ph-chart-line-up"></i>
+                            <span>Pandas/NumPy</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section-container hidden-reveal py-section text-center">
+            <h2 class="section-title text-center inline-block mb-4">04. <span class="text-glow">What's Next?</span></h2>
+            <h3 class="text-4xl font-bold mb-6 text-white">Get In Touch</h3>
+            <p class="max-w-2xl mx-auto mb-10 text-gray-400">
+                Although I'm currently focused on my university studies, my inbox is always open. Whether you have a question, a hackathon invitation, or just want to say hi, I'll try my best to get back to you!
+            </p>
+            
+            <div class="contact-methods mb-12">
+                <a href="mailto:hello@example.com" class="contact-method group">
+                    <i class="ph ph-envelope-simple group-hover:text-white transition-colors"></i>
+                    <span>hello@example.com</span>
+                </a>
+                <a href="tel:+1234567890" class="contact-method group">
+                    <i class="ph ph-phone group-hover:text-white transition-colors"></i>
+                    <span>+1 (234) 567-890</span>
+                </a>
+            </div>
+
+            <form class="contact-form mx-auto max-w-md text-left">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" rows="4" placeholder="Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-full justify-center">
+                    Send Message <i class="ph ph-paper-plane-right"></i>
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="social-links">
+            <a href="https://github.com/Solomon0603" target="_blank" aria-label="GitHub"><i class="ph ph-github-logo"></i></a>
+            <a href="https://www.linkedin.com/in/solomon-david-133024328" target="_blank" aria-label="LinkedIn"><i class="ph ph-linkedin-logo"></i></a>
+            <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="ph ph-twitter-logo"></i></a>
+        </div>
+        <p class="copyright">
+            Designed & Built by Solomon David <br>
+            <span class="text-xs text-gray-500 mt-1 block">© 2026. All rights reserved.</span>
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
